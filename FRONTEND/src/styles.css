@@ -1,4 +1,4 @@
-/* 
+/*
 
 --- 01 TYPOGRAPHY SYSTEM ---
 
@@ -19,11 +19,11 @@ Paragraph default: 1.6
 
 --- 02 COLORS ---
 
--> Primary: 
--> Tints: 
--> Shades: 
+-> Primary:
+-> Tints:
+-> Shades:
 -> Accents:
--> Greys: 
+-> Greys:
 
 --- 05 SHADOWS ---
 
@@ -74,7 +74,7 @@ h1{
 /******************************/
 
 .container{
-    max-width: 130rem;
+    max-width: 100vw;
     padding: 0 3.2rem;
     margin: 0 auto;
 }

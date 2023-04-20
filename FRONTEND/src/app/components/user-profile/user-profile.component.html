@@ -9,14 +9,14 @@
                         <a class="main-nav-link" (click)="selectComponent('RMB')">Rată Metabolică Bazală</a>
                     </div>
                 </div>
-                <div class="user-photo">                 
+                <div class="user-photo">
                     <!-- <form [formGroup]="uploadForm" (ngSubmit)="uploadPhoto()" enctype='multipart/form-data'>
                         <div class="image-upload">
-                           <input type="file" formControlName="image"> 
-                           <button class="btn"><fa-icon [icon]="faUpload"></fa-icon></button> 
+                           <input type="file" formControlName="image">
+                           <button class="btn"><fa-icon [icon]="faUpload"></fa-icon></button>
                         </div>
                     </form> -->
-                    <img src="assets/img/user.png" class="img-user" alt="user photo" width="270" height="250"> 
+                    <img src="assets/img/user.png" class="img-user" alt="user photo" width="270" height="250">
                     <div class="user-description">
                         Detalii cont:
                         <br>
@@ -33,7 +33,7 @@
                     </div>
                     <div class="card" *ngFor="let user of userTR$ | async">
                         <h2>Trigliceride: {{user.result}}</h2>
-                    </div> 
+                    </div>
                     <div class="card" *ngFor="let user of userCol$ | async">
                         <h2>Colesterol: {{user.result}}</h2>
                     </div>
@@ -42,7 +42,7 @@
                 <div class="chart-box">
                     <app-rmb *ngIf="selectedComponent === 'RMB'"></app-rmb>
                     <app-bmi *ngIf="selectedComponent === 'BMI'"></app-bmi>
-                  </div>
+                </div>
             </div>
         </div>
     </body>
